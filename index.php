@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="shortcut icon" href="img/JDlogos.png" />
+<title>The Fashion Show</title>
+    <meta property="og:title" content="The fashion show" />
     <meta name="description" content="fashion show in nagpur" />
     <meta name="description" content="jai deshmukh fashion event" />
     <meta name="description" content="the fashion fair" />
@@ -20,8 +23,8 @@
 <link rel="stylesheet" href="css/style.css">
 <link href="https://fonts.googleapis.com/css?family=Joti+One" rel="stylesheet">
 <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
-<link rel="shortcut icon" href="img/JDlogos.png" />
-<title>The Fashion Show</title>
+<link href="css/lightboxgallery-min.css" >
+
 </head>
 <body id="home">
   <nav class="navbar navbar-toggleable-md navbar-light fixed-top py-4">
@@ -521,6 +524,19 @@
   <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
    <script>
     AOS.init();
+  </script>
+  <script src="js/lightboxgallery-min.js"></script>
+  <script type="text/javascript">
+  jQuery(function($) {
+    $(document).on('click', '.lightboxgallery-gallery-item', function(event) {
+      event.preventDefault();
+      $(this).lightboxgallery({
+        showCounter: true,
+        showTitle: true,
+        showDescription: true
+      });
+    });
+  });
   </script>
 </body>
 </html>
