@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="description" content="fashion show in nagpur" />
+    <meta name="description" content="jai deshmukh fashion event" />
+    <meta name="description" content="the fashion fair" />
+    <meta name="description" content="the fashion show" />
+    <meta name="description" content="fashion show near me" />
+    <meta name="description" content="fashion event" />
+    <meta name="description" content="jdfashionfair.com" />
+    <meta name="description" content="jdfashionfair" />
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -360,9 +368,11 @@
               $message = $_POST['message'];
               
               if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
-                  echo "kindly Provide Valid email";
+                  echo "<div class='alert alert-info' role='alert'>
+  <strong>Check Email..!</strong> Please Provide Valid E-mail Address.
+</div>" ;
               }else{
-                  if(!empty($fname) && !empty($email) && !empty($lname) && !empty($phnumber) && !empty($message)){
+                  if(!empty($fname) && !empty($email) && !empty($lname) && !empty($phnumber)){
                       
                       $body = $fname . "\n" . $lname . "\n" . $email . "\n" .$phnumber . "\n" . $message;
                   
@@ -370,12 +380,21 @@
                   $subject = "regarding to the fashion show";
                   $From = "response@jdfashionfair.com";
                   if(mail($mymailid,$subject,$body,$From)){
-                      echo "successfull";
+                  
+                      ?>
+              <div class="alert alert-success" role="alert">
+  <strong> Thank You ! </strong> We will Shortly inform You .
+</div>
+              <?php
                   }else{
-                      echo "something Went Wrong";
+                      echo "<div class='alert alert-warning' role='alert'/>
+  <strong>Warning!</strong> Something Went Wrong Plese Try again leter or Check all fields.
+</div>";
                   }
                   }else{
-                      echo "submit all the fields";
+                      echo "<div class='alert alert-info' role='alert'>
+  <strong>Plese Check All fiels ! </strong> And try agin .
+</div>";
                   }
               }
               
@@ -394,11 +413,13 @@
                   
                   
                 <div class="col-md-6">
+                    <label>First Name <span  class="text-danger"> * </span></label>
                   <div class="form-group">
                       <input name="fname" type="text" class="form-control" placeholder="First Name">
                   </div>
                 </div>
                 <div class="col-md-6">
+                    <label> Last Name <span  class="text-danger"> * </span></label>
                   <div class="form-group">
                     <input name="lname" type="text" class="form-control" placeholder="Last Name">
                   </div>
@@ -406,11 +427,13 @@
               </div>
               <div class="row">
                 <div class="col-md-6">
+                    <label> Email <span  class="text-danger"> * </span></label>
                   <div class="form-group">
                       <input name="email" type="text" class="form-control" placeholder="Email">
                   </div>
                 </div>
                 <div class="col-md-6">
+                    <label> Contact Number <span  class="text-danger"> * </span></label>
                   <div class="form-group">
                       <input name="phnumber" type="text" class="form-control" placeholder="Phone Number">
                   </div>
@@ -418,6 +441,7 @@
               </div>
               <div class="row">
                 <div class="col-md-12">
+                    <label> Message </label>
                   <div class="form-group">
                       <textarea name="message" class="form-control" placeholder="Message"></textarea>
                   </div>
@@ -425,7 +449,7 @@
               </div>
               <div class="row">
                 <div class="col-md-12">
-                  <input type="submit" class="btn btn-outline-danger btn-block" value="Submit">
+                  <input type="submit" class="btn btn-outline-primary btn-block" value="Submit">
                 </div>
               </div>
               
@@ -461,6 +485,8 @@
                         </div>
                         <div class="p-2 item-hl "><i class="fa fa-envelope news-letter-col-2" aria-hidden="true"></i> 
                         jaykumar.deshmukh@gmail.com
+                        <br>
+                        response@jdfashionfair.com
                         </div>
                         <div class="p-2 item-hl ">
                             <i class="fa fa-map-marker news-letter-col-2" aria-hidden="true"></i>  Scientific Hall, Laxminagar,Nagpur
@@ -468,7 +494,7 @@
                     </div>
       </div>
        <div class="col-md-6">
-        <p class="lead">Copyright &copy; 2017 JDeshmukh</p>
+        <p class="lead">Copyright &copy; <?php echo date('Y'); ?> JDeshmukh</p>
       </div>
     </div>
   </div>
