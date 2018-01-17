@@ -1,4 +1,3 @@
-
 body {
   margin-top: 105px; 
 font-family: 'Joti One', cursive;
@@ -68,4 +67,18 @@ background-size:cover;
 #contact {
 	padding-bottom: 50px;
 	padding-top: 50px;
+}
+li{
+    list-style: none;
+}
+.my-gallery img {
+    
+    height: 300px;
+    width: 350px;
+    margin: 10px;
+}
+.my-gallery{
+    display: flex;
+  flex-wrap: wrap-reverse;
+ justify-content: center;
 }

@@ -20,7 +20,7 @@
 <link rel="stylesheet" href="css\font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="slick-1.8.0/slick-1.8.0/slick/slick.css"/>
   <link rel="stylesheet" type="text/css" href="slick-1.8.0/slick-1.8.0/slick/slick-theme.css"/>
-<link rel="stylesheet" href="css/style.css">
+<link type="text/css"  rel="stylesheet" href="css/style.css">
 <link href="https://fonts.googleapis.com/css?family=Joti+One" rel="stylesheet">
 <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
 <link href="css/lightboxgallery-min.css" >
@@ -42,10 +42,13 @@
               <a href="#about" class="nav-link">About</a>
             </li>
             <li class="nav-item">
-              <a href="#authors" class="nav-link">Meet The Sopnsers</a>
+              <a href="#authors" class="nav-link">Meet The Sponsors</a>
             </li>
             <li class="nav-item">
               <a href="#contact" class="nav-link">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a href="gallerypage.php" class="nav-link">Gallery</a>
             </li>
           </ul>
         </div>
@@ -61,8 +64,7 @@
             The <span style="color: #3292a6;"> Fashion</span> Show 
           </h3>
           <p class="lead">Dress Like You're Already Famous...</p>
-          
-		  </div>
+        </div>
       </div>
     </div>
   </div>
@@ -95,9 +97,9 @@
   <div id="about" class="container py-5">
      <div  data-aos="fade-right" class="info-header mb-5 text-center">
           <h1 class="text-primary pb-3">
-            Up-comeing Events
+            Up-coming Events
           </h1>
-            <p class="lead pb-3"> Check Out Upcomeing Event Details</p>
+            <p class="lead pb-3"> Check Out Up-coming Event Details</p>
         </div>
     <div class="row">
      
@@ -240,7 +242,7 @@
             Rock The RunWay
           </h1>
             <p class="lead pb-3"> 
-            We are now hosting Auditions for the upcomeing Fashion Show Plese Bring Your Heals For Audiotion See The Details For More Information
+            We are now hosting Auditions for the up-coming Fashion Show Please Bring Your Heals For Audition See The Details For More Information
             </p>
         </div>
 <div class="row">
