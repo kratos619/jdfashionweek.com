@@ -23,7 +23,9 @@
 <link type="text/css"  rel="stylesheet" href="css/style.css">
 <link href="https://fonts.googleapis.com/css?family=Joti+One" rel="stylesheet">
 <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
-<link href="css/lightboxgallery-min.css" >
+<link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
 
 </head>
 <body id="home">
@@ -35,8 +37,11 @@
         </a>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
+              <li class="animated infinite tada nav-item">
+                  <a href="#new" style="color: #f6412d;" class="nav-link">New</a>
+            </li>
             <li class="nav-item">
-              <a href="#home" class="nav-link">Home</a>
+              <a  href="#home" class="nav-link">Home</a>
             </li>
             <li class="nav-item">
               <a href="#about" class="nav-link">About</a>
@@ -161,78 +166,77 @@
           </div>
         </div>
       </div>
+        
     </div>
   </div>
 </secction>
 
-<!-- About section 
+ <!-- HOME ICON SECTION -->
+    <section id="new" class="py-5">
+        <div class="container">
+          <div class="animated infinite bounce info-header" style="padding-bottom: 30px;">
+              <center><i style="color: 	#ff5607;" class="fa fa-free-code-camp fa-5x" aria-hidden="true"></i><h3 class="display-4 text-primary"  style="font-weight: bold;">Hurry Up</h3></center>
+          </div>
+            <br>
+            <div class="row">
 
-<section id="about" class="my-5 py-5 text-center bg-faded">
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        <div class="info-header mb-5">
-          <h1 class="text-primary pb-3">
-            Up-comeing Events
-          </h1>
-            <p class="lead pb-3"> Check Out The List Of Upcomeing Events</p>
+                <div data-aos="flip-up" data-aos-duration="1000" class="col-md-4 mb-4 text-center">
+                    <div class="book">
+                       <i class="text-primary fa fa-user-circle fa-4x" aria-hidden="true"></i>
+                    </div>
+                    <h2 style="font-weight: 900;">Auditions is started</h2>
+                    <p class="lead"  style="font-weight: 500;">
+                    Date: 18 Dec to 10 feb
+                    <br>
+               
+                    Place: Plot no : 10, saraswati temple ramngar Nagpur, 
+                    landmark: south Indian temple back site, Nagpur
+                    <br>
+                   
+                        Time: 6-8 pm
+                        <br>
+                        <a href="jdfs_form.pdf" target="_blank" class=" animated infinite pulse btn-block btn-primary">Download Application Form</a>
+                    </p>
+                </div>
+                <div data-aos="flip-up" data-aos-duration="2000" class="col-md-4 mb-4 text-center">
+                    <div class="book">
+                        <i class="text-primary fa fa-users fa-4x"></i>
+                    </div>
+                    <h2  style="font-weight: 900;">To Book  Tickets</h2>
+                    <p class="lead"  style="font-weight: 500;">
+                         <h4>
+              To Book tickets call Or Direct Walk
+            </h4>
+            <p>
+              <i class="fa fa-phone" aria-hidden="true"></i> 9096160005
+              <br>
+             <i class="fa fa-phone" aria-hidden="true"></i> 9766761308
+            </p>
+            <h4>
+              Ticket best Price
+            </h4>
+            <p>
+              <i class="fa fa-ticket" aria-hidden="true"></i> Rs. 500/-
+              <br>
+            <i class="fa fa-ticket" aria-hidden="true"></i> Rs. 300/-
+            </p>
+            
+                    </p>
+                </div>
+                <div data-aos="flip-up" data-aos-duration="3000" class="col-md-4 mb-4 text-center">
+                    <div class="book">
+                        <i class="text-primary fa fa-thumbs-up fa-4x" aria-hidden="true"></i>
+                    </div>
+                    <h2 style="font-weight: 900;">Event Venu</h2>
+                    <p class="lead" style="font-weight: 500;">
+                    Scientic Hall Nagpur 
+Date: 19 feb 2018 
+Time 7 To 10 PM    
+                    </p>
+                </div>
+            </div>
         </div>
-
-       
-        <div id="accordion" role="tablist">
-          <div class="card">
-            <div class="card-header" role="tab" id="heading1">
-              <h5 class="mb-0">
-                <div href="#collapse1" data-toggle="collapse" data-parent="#accordion">
-                  <i class="fa fa-arrow-down"></i> Auditons
-                </div>
-              </h5>
-            </div>
-            <div id="collapse1" class="collapse show">
-              <div class="card-block">
-                 <p class="lead">Place Nagpur</p>
-                	18 Dec To 15 Feb
-              </div>
-            </div>
-          </div>
-
-
-          <div class="card">
-            <div class="card-header" role="tab" id="heading">
-              <h5 class="mb-0">
-                <div href="#collapse2" data-toggle="collapse" data-parent="#accordion">
-                  <i class="fa fa-arrow-down"></i> Gain The Knwledge
-                </div>
-              </h5>
-            </div>
-            <div id="collapse2" class="collapse">
-              <div class="card-block">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt sapiente veniam repellendus, iste, ratione modi perferendis! Ducimus quibusdam aliquid vero.
-              </div>
-            </div>
-          </div>
-
-
-          <div class="card">
-            <div class="card-header" role="tab" id="heading3">
-              <h5 class="mb-0">
-                <div class="collapsed" href="#collapse3" data-toggle="collapse" data-parent="#accordion">
-                  <i class="fa fa-arrow-down"></i> Open Your Mind
-                </div>
-              </h5>
-            </div>
-            <div id="collapse3" class="collapse">
-              <div class="card-block">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt sapiente veniam repellendus, iste, ratione modi perferendis! Ducimus quibusdam aliquid vero.
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
--->
+    </section>
 
 <!--Hot Pic -->
 <div class="container">
@@ -269,7 +273,7 @@
 		<br>
 		<br>
 		<p style="color:#f02c2c;" class="lead ">
-			Note: If You are 5.3 or Taller And Over The Age of 16 consider Audition for over Show ! No Experience Necessary Free Traning Provided <br>
+			Note: If You are 5.3 or Taller And Over The Age of 16 consider Audition for over Show ! No Experience Necessary Free Training Provided <br>
 			 <i class="fa fa-phone-square" aria-hidden="true"></i> 909616005, 9766761308
 		</p>
 	</div>
