@@ -40,7 +40,7 @@
               <li class="animated infinite tada nav-item">
                   <a href="#new" style="color: #f6412d;" class="nav-link">New</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item active">
               <a  href="#home" class="nav-link">Home</a>
             </li>
             <li class="nav-item">
@@ -218,7 +218,8 @@
             <p>
               <i class="fa fa-ticket" aria-hidden="true"></i> Rs. 500/-
               <br>
-            <i class="fa fa-ticket" aria-hidden="true"></i> Rs. 300/-
+            <i class="fa fa-ticket" aria-hidden="true"></i> Rs. 300/- <br/>
+            Here you can get entries for 5 people at the cost of two tickets that is Rs.  900/-  Only.
             </p>
             
                     </p>

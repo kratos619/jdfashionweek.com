@@ -86,8 +86,8 @@
                             
                         
                             ?>
-                                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                                        <a href="gallery/<?php echo $entery; ?>" itemprop="contentUrl" data-size="1280x853">
+                                    <figure itemprop="associatedMedia" itemscope itemtype="">
+                                        <a href="gallery/<?php echo $entery; ?>" itemprop="contentUrl" data-size="720x800">
                                             <img class="embed-responsive-item"  src="gallery/<?php echo $entery; ?>" itemprop="thumbnail" alt="Image description" />
                                         </a>
                                     </figure>        
